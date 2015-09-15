@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="com.example.myownslidetounlockbutton.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/container_grey_rellayout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/circle_grey" >
+
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/textView_delivered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Slide To Unlock"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#545454"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+    <RelativeLayout 
+       android:layout_alignParentLeft="true"
+        android:id="@+id/rellayout_background_red"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/circle_red"
+        
+        ></RelativeLayout>
+    <ImageView 
+        android:id="@+id/imageView_slider"
+        
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_button_slider"
+        ></ImageView>
+</RelativeLayout>
